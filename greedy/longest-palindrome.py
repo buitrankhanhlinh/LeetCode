@@ -7,17 +7,16 @@ class Solution:
             else:
                 d[character] += 1
 
-        a = False
+        a = 0
         ans = 0
         for k, v in d.items():
             if v %2==0:
                 ans += v
             else:
                 ans += (v-1)
-                a  = True
-        if a == True:
-            return ans + 1
-        return ans
+                a  = 1
+        
+        return ans + (a + 1) // 2
             
             
 

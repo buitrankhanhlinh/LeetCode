@@ -4,8 +4,8 @@ class Solution:
         if numRows == 1:
             return [[1]]
         
-        if numRows == 2:
-            return [[1], [1,1]]
+        # if numRows == 2:
+        #     return [[1], [1,1]]
 
         l = []
         prev = self.generate(numRows-1)
